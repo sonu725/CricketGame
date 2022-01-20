@@ -1,0 +1,10 @@
+#include "game.h"
+using namespace std;
+int main(){
+	Game game;
+	game.welcome();
+	cout<<"Press Enter to continue"<<endl;
+	getchar();
+	game.showAllplayers();
+	return 0;
+}

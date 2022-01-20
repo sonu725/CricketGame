@@ -1,0 +1,13 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+#include<limits>
+#include<team.h> // player.h string and vector
+class Game{
+
+	public:
+	bool isFirstInnings;
+	Team teamA,teamB;
+	Team *battingTeam,*bowlingTeam;
+	Player *batsman,*bowler;
+};

@@ -1,0 +1,121 @@
+#include "game.h"
+using namespace std;
+Game :: Game(){
+
+	 PlayersPerTeam=4;
+	 maxballs=6;
+	 totalPlayers=11;
+
+		players[0] = "Virat";
+		players[1] = "Rohit";
+		players[2] = "S Dhawan";
+		players[3] = "Pant";
+		players[4] = "MS Dhoni";
+		players[5] = "KL Rahul";
+		players[6] = "R Jadeja";
+		players[7] = "Hardik";
+		players[8] = "Bumrah";
+		players[9] = "B Kumar";
+		players[10] = "MD Shami";
+
+	 this->isFirstInnings=false;
+	 teamA.name="Team-A";
+	 teamB.name="Team-B";
+}
+
+void Game::welcome(){
+
+	cout<< "------------------------------------------------"<<"\n";
+	cout<< "|=================CRIC--IN=====================|"<<"\n";
+	cout<< "|                                              |"<<"\n";
+	cout<< "|        Welcome to Virtual Cricket Game       |"<<"\n";
+	cout<< "----------------------------------------------- "<<"\n";
+	cout<<"\n"<<"\n";
+	cout<< "------------------------------------------------------------"<<"\n";
+	cout<< "|======================Instructions========================="<<"\n";
+	cout<< "------------------------------------------------------------"<<"\n";
+	cout<< "|                                                          |"<<"\n";
+	cout<< "| 1. Create 2 teams (Team-A and Team-B with 4              |"<<"\n";
+	cout<< "|    players each) from a give pool of 11 players.         |"<<"\n";
+	cout<< "| 2. Lead the toss and decide the choice of play.          |"<<"\n";
+	cout<< "| 3. Each innings will be of 6 balls.                      |"<<"\n";
+	cout<< "------------------------------------------------------------"<<"\n";
+}
+
+void Game::showAllplayers() {
+
+	cout<<"\n";
+	cout<< "-----------------------------------------------------------"<<"\n";
+	cout<< "|=====================Pool of Players=====================|"<<"\n";
+	cout<< "-----------------------------------------------------------"<<"\n";
+	cout<<"\n";
+	for( int i=0;i< totalPlayers;i++) {
+		cout<<"\t\t["<< i <<"] "<<players[i]<<"\n";
+	}
+}
+
+int Game::takeIntegerInput(){
+
+	int n;
+	while(!(cin>>n)){
+
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout<<"Invalid input! Please try again with valid input: ";
+	}
+	return n;
+}
+
+void Game :: selectPlayer(){
+	cout<<endl;
+	cout<< "-------------------------------------------------------------"<<"\n";
+	cout<< "|================Create Team--A and Team--B=================|"<<"\n";
+	cout<< "-------------------------------------------------------------"<<"\n";
+
+	for(int i=0;i<totalPlayers;i++){
+
+		// Selection of Team A Player
+		cout<<"\n"<< "Select player " <<i + 1<<" of Team A -";
+		teamASelection:
+		int playerIndexTeamA=takeIntegerInput();
+		if(playerIndexTeamA < 0 || playerIndexTeamA > 10) {
+			cout<<"\n"<<"Please select from the given players"<<endl;
+			goto teamASelection;
+		}
+		else if(!validateSelectedPlayer(playerIndexTeamA)){
+			cout<<"\n"<<"Player has been already selected. Please select other players"<<"\n";
+			goto teamASelection;
+		}else{
+
+			 Player teamAplayer;
+			 teamAplayer.id = playerIndexTeamA;
+			 teamAplayer.name = players[playerIndexTeamA];
+			 teamA.players.push_back(teamAplayer);
+		}
+
+
+		// Selection Of Team B Player
+
+		cout<<"\n"<< "Select player " <<i + 1<<" of Team B -";
+
+	    teamBSelection:
+		cout<<"\n"<< "Select player " <<i + 1<<" of Team B -";
+		int playerIndexTeamB=takeIntegerInput();
+
+		if(playerIndexTeamB < 0 || playerIndexTeamB > 10) {
+			cout<<"\n"<<"Please select from the given players"<<endl;
+			goto teamBSelection;
+		}
+		else if(!validateSelectedPlayer(playerIndexTeamB)){
+			cout<<"\n"<<"Player has been already selected. Please select other players"<<"\n";
+			goto teamBSelection;
+		}else{
+
+			 Player teamBplayer;
+			 teamBplayer.id = playerIndexTeamB;
+			 teamBplayer.name = players[playerIndexTeamB];
+			 teamB.players.push_back(teamBplayer);
+		}
+	}
+}
+

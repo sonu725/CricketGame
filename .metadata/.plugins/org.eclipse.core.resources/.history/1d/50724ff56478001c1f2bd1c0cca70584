@@ -1,0 +1,26 @@
+#include "game.h"
+
+Game :: Game(){
+
+	 PlayersPerTeam=4;
+	 maxballs=6;
+	 totalPlayers=11;
+
+		players[0] = "Virat";
+		players[1] = "Rohit";
+		players[2] = "S Dhawan";
+		players[3] = "Pant";
+		players[4] = "MS Dhoni";
+		players[5] = "KL Rahul";
+		players[6] = "R Jadeja";
+		players[7] = "Hardik";
+		players[8] = "Bumrah";
+		players[9] = "B Kumar";
+		players[10] = "MD Shami";
+
+	 this->isFirstInnings=false;
+	 teamA.name="Team-A";
+	 teamB.name="Team-B";
+
+
+}

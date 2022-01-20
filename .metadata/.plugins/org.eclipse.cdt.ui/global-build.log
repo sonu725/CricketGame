@@ -1,0 +1,135 @@
+11:20:51 **** Rebuild of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+..\src\virtual_cricket.cpp:1:2: error: invalid preprocessing directive #incude; did you mean #include?
+    1 | #incude<bits/stdc++.h>
+      |  ^~~~~~
+      |  include
+..\src\virtual_cricket.cpp: In function 'int main()':
+..\src\virtual_cricket.cpp:4:2: error: 'cout' was not declared in this scope
+    4 |  cout<<"hello wprld\n";
+      |  ^~~~
+..\src\virtual_cricket.cpp:1:1: note: 'std::cout' is defined in header '<iostream>'; did you forget to '#include <iostream>'?
+  +++ |+#include <iostream>
+    1 | #incude<bits/stdc++.h>
+11:21:05 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -o virtual_cricket.exe "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+11:25:00 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -o virtual_cricket.exe "src\\virtual_cricket.o" 
+11:36:31 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\player.o" "..\\src\\player.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\team.o" "..\\src\\team.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+18:04:46 **** Rebuild of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\player.o" "..\\src\\player.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\team.o" "..\\src\\team.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+19:19:28 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+In file included from ..\src\game.cpp:1:
+..\src\game.h:5:9: fatal error: team.h: No such file or directory
+    5 | #include<team.h> // player.h string and vector
+      |         ^~~~~~~~
+compilation terminated.
+19:19:40 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+In file included from ..\src\game.cpp:1:
+..\src\game.h:5:9: fatal error: team.h: No such file or directory
+    5 | #include<team.h> // player.h string and vector
+      |         ^~~~~~~~
+compilation terminated.
+19:21:27 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\team.o" "..\\src\\team.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\player.o" "..\\src\\player.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+19:30:24 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+10:43:59 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\player.o" "..\\src\\player.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\team.o" "..\\src\\team.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+Info: Nothing to build for virtual_cricket
+10:46:24 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file virtual_cricket.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:46:36 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+10:49:40 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file virtual_cricket.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:49:48 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+10:51:46 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+17:50:34 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\game.o: in function `ZN4Game3batEv':
+E:\Mini_Project\virtual_cricket\Debug/../src/game.cpp:277: undefined reference to `Game::showGameScorecard()'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: E:\Mini_Project\virtual_cricket\Debug/../src/game.cpp:284: undefined reference to `Game::showGameScorecard()'
+collect2.exe: error: ld returned 1 exit status
+17:50:57 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\game.o: in function `ZN4Game3batEv':
+E:\Mini_Project\virtual_cricket\Debug/../src/game.cpp:277: undefined reference to `Game::showGameScorecard()'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: E:\Mini_Project\virtual_cricket\Debug/../src/game.cpp:284: undefined reference to `Game::showGameScorecard()'
+collect2.exe: error: ld returned 1 exit status
+17:51:02 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\game.o: in function `ZN4Game3batEv':
+E:\Mini_Project\virtual_cricket\Debug/../src/game.cpp:277: undefined reference to `Game::showGameScorecard()'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: E:\Mini_Project\virtual_cricket\Debug/../src/game.cpp:284: undefined reference to `Game::showGameScorecard()'
+collect2.exe: error: ld returned 1 exit status
+17:53:15 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
+17:27:15 **** Incremental Build of configuration Debug for project virtual_cricket ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual_cricket.o" "..\\src\\virtual_cricket.cpp" 
+g++ -o virtual_cricket.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual_cricket.o" 
+Info: Nothing to build for virtual_cricket
